@@ -2,9 +2,8 @@
 #include <algorithm>
 #include <string>
 
+int result[26] = {0,};
 int main(){
-
-    int result[26] = {0,};
     int index = 0;
     std::string val;
     std::cin >> val;
