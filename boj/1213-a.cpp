@@ -14,7 +14,7 @@ int main(){
 
     for(int i= 'Z'; i >= 'A'; i--){
         if(cnt[i]){
-            if(cnt[i] & 1){ // 2진수 비교
+            if(cnt[i] & 1){ // binary
                 mid = char(i); flag++;
                 cnt[i]--;
             }
