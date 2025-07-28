@@ -29,6 +29,6 @@ void insertAfter(Node* currentNode, Node* newNode);
 void insertNewHead(Node** currentHead, Node* newHead);
 void removeNode(Node** head, Node* node);
 Node* getNodeAt(Node* head, int location);
-int getNodeCound(Node* head);
+int getNodeCount(Node* head);
 
 #endif
