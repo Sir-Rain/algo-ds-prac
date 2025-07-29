@@ -44,6 +44,8 @@ void insertNewHead(Node** currentHead, Node* newHead) {
 void removeNode(Node** head, Node* node) {
     if ( *head == node) { 
         *head = (*node).nextNode;
+
+        free(node);
     } else {
         Node* current = *head;
 
@@ -53,6 +55,8 @@ void removeNode(Node** head, Node* node) {
 
         if(current != NULL) {
             (*current).nextNode = (*node).nextNode;
+
+            free(node);
         }
     }
 }
