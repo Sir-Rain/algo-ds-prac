@@ -1,4 +1,4 @@
-#include "ArrayCircleQueue.h"
+#include "circle_queue.h"
 
 int main() {
     ArrayCircleQueue* queue = NULL;

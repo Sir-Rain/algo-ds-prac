@@ -1,4 +1,4 @@
-#include "ArrayCircleQueue.h"
+#include "circle_queue.h"
 
 void createQueue(ArrayCircleQueue** queue, int capacity) {
     (*queue) = (ArrayCircleQueue*)malloc(sizeof(ArrayCircleQueue));
@@ -17,7 +17,7 @@ void destroyQueue(ArrayCircleQueue* queue) {
 }
 
 /** 
-    To-do 모듈로 연산을 이용한 포인터 초기화
+    To-do 모듈로 연산을 이용한 투 포인터 초기화
 */
 void enqueue(ArrayCircleQueue* queue, NodeData data) {
     int position = 0;
