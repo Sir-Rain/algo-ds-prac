@@ -7,7 +7,7 @@ Heap* createHeap(int initialSize) {
     (*newHeap).capacity = initialSize;
     (*newHeap).usedSize = 0;
 
-    printf("Size of Heap's Nodes %d \n", sizeof((*newHeap).nodes));
+    printf("Size of Heap's Nodes: %d \n", (int) sizeof(Node) * initialSize);
 
     return newHeap;
 }
@@ -125,6 +125,7 @@ void swapNodes(Heap* heap, int indexF, int indexS) {
 }
 
 void printNodes(Heap* heap) {
+    
     for (int i=0; i< (*heap).usedSize; i++) {
         printf("%d ", (*((*heap).nodes + i)).data );
     }
