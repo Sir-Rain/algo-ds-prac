@@ -40,6 +40,8 @@ void insert(Heap* heap, NodeData newData) {
         parentPosition = getParent(currentPosition);
 
     }
+
+    (*heap).usedSize++;
 }
 
 void deleteMin(Heap* heap, Node* root) {
